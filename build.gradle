@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+ext {
+    vertxVersion = '3.8.5'
+}
+
+repositories {
+    mavenLocal()
+    jcenter()
+}
+
+version = '1.0.0-SNAPSHOT'
+
+dependencies {
+    compile "io.vertx:vertx-core:$vertxVersion"
+    compile "io.vertx:vertx-rx-java2:${vertxVersion}"
+    compile "io.vertx:vertx-web:$vertxVersion"
+}
