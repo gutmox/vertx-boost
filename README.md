@@ -9,7 +9,7 @@ bazel run :service
 
 ## Running from IntelliJ
 
-![IntelliJ](https://github.com/gutmox/vertx-boost/raw/master/docs/intellij.png)  
+![IntelliJ](https://github.com/gutmox/vertx-boost/blob/master/doc/intellij.png?raw=true)  
 
 ### Building docker container
 
