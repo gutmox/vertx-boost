@@ -49,3 +49,8 @@ container_pull(
     repository = "library/openjdk",
     digest = "sha256:31e765618b9d37e3e73aab362f5b867729007d87f473d26a1aa0a789a1cfea21",
 )
+
+load("//3rdparty:workspace.bzl", "maven_dependencies")
+maven_dependencies()
+load("//3rdparty:target_file.bzl", "build_external_workspace")
+build_external_workspace(name = "third_party")

@@ -12,10 +12,10 @@ java_library(
     resources = glob(["**/src/main/resources/**"]),
     visibility = ["//visibility:public"],
     deps = [
-        "@maven//:io_vertx_vertx_core",
-        "@maven//:io_vertx_vertx_rx_java2",
-        "@maven//:io_vertx_vertx_web",
-        "@maven//:io_reactivex_rxjava2_rxjava",
+        "@third_party//3rdparty/jvm/io/vertx:vertx_core",
+        "@third_party//3rdparty/jvm/io/vertx:vertx_web",
+        "@third_party//3rdparty/jvm/io/vertx:vertx_rx_java2",
+        "@third_party//3rdparty/jvm/io/reactivex/rxjava2:rxjava"
     ],
 )
 

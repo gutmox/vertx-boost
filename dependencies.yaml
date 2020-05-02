@@ -1,0 +1,11 @@
+dependencies:
+  io.reactivex.rxjava2:
+    rxjava:
+      lang: java
+      version: "2.2.17"
+
+  io.vertx:
+    vertx:
+      lang: java
+      modules: [ "core", "rx-java2", "web" ]
+      version: "3.8.5"
