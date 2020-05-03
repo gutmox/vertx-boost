@@ -27,3 +27,7 @@ hs_err_pid*
 .vscode
 .classpath
 .project
+bazel-out
+bazel-bin
+bazel-testlogs
+bazel-vertx-boost
