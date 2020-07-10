@@ -1,10 +1,17 @@
 # vertx-boost
-vertx simple boost
+
+vertx simple boost 
 
 ## Building and running using Bazel
 
 ```
 bazel run :service
+```
+
+## Passing unit tests using Bazel
+
+```
+bazel test :tests
 ```  
 
 ## Running from IntelliJ

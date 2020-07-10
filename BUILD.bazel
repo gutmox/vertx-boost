@@ -19,6 +19,35 @@ java_library(
     ],
 )
 
+
+java_library(
+    name = "units-tests-deps",
+    srcs = glob(["**/src/test/java/**/*.java"]),
+    resources = glob(["**/src/test/resources/**"]),
+    visibility = ["//visibility:public"],
+    deps = [
+        ":all-external-targets",
+        "@maven_test//:org_assertj_assertj_core",
+        "@maven_test//:org_junit_jupiter_junit_jupiter_api",
+        "@maven_test//:org_junit_jupiter_junit_jupiter_engine",
+        "@maven_test//:org_junit_platform_junit_platform_console",
+    ],
+)
+
+java_test(
+    name = "tests",
+    srcs = glob([
+        "*.java",
+    ]),
+    args = ["--select-package=com.gutmox"],
+    main_class = "org.junit.platform.console.ConsoleLauncher",
+    use_testrunner = False,
+    visibility = ["//visibility:public"],
+    runtime_deps = [
+        ":units-tests-deps",
+    ],
+)
+
 java_binary(
     name = "service",
     main_class = "io.vertx.core.Launcher",

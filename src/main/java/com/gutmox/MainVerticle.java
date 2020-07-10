@@ -15,10 +15,11 @@ public class MainVerticle extends AbstractVerticle {
 
 	private static final String HEALTH_CHECK = "/health";
 	private static final String HELLO = "/hello";
+	private static final String ROOT = "/";
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(MainVerticle.class.getName());
-	private String HOST = "0.0.0.0";
-	private Integer PORT = 8080;
+	private final String HOST = "0.0.0.0";
+	private final Integer PORT = 8080;
 
 	@Override
 	public Completable rxStart() {
@@ -37,6 +38,7 @@ public class MainVerticle extends AbstractVerticle {
 		Router router = Router.router(vertx);
 		router.get(HEALTH_CHECK).handler(this::healthCheck);
 		router.get(HELLO).handler(this::hello);
+		router.get(ROOT).handler(this::hello);
 		return Single.just(router);
 	}
 
