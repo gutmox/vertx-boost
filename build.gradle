@@ -19,6 +19,7 @@ dependencies {
     compile "io.vertx:vertx-core:$vertxVersion"
     compile "io.vertx:vertx-rx-java2:$vertxVersion"
     compile "io.vertx:vertx-web:$vertxVersion"
+    compile "io.vertx:vertx-web-client:${vertxVersion}"
     testCompile "io.vertx:vertx-junit5:$vertxVersion"
     testCompile "io.vertx:vertx-unit:$vertxVersion"
     testCompile "org.assertj:assertj-core:$assertjVersion"

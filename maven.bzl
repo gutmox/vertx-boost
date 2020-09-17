@@ -5,6 +5,7 @@ def maven():
         name = "maven",
         artifacts = [
             "io.vertx:vertx-web:3.9.1",
+            "io.vertx:vertx-web-client:3.9.1",
             "io.vertx:vertx-core:3.9.1",
             "io.vertx:vertx-rx-java2:3.9.1",
         ],
