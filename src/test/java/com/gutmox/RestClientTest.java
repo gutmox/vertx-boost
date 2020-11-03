@@ -25,7 +25,7 @@ public class RestClientTest {
 	}
 
 
-	@Test
+	//@Test
 	void check_returned_rest_entity(VertxTestContext testContext){
 
 		getCatalogueAVS().subscribe(res ->{

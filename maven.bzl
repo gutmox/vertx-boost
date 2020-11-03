@@ -10,7 +10,6 @@ def maven():
             "io.vertx:vertx-rx-java2:3.9.1",
         ],
         repositories = [
-            "https://maven.google.com",
             "https://repo1.maven.org/maven2",
         ],
         fetch_sources = True,
@@ -24,9 +23,11 @@ def maven():
 		    "org.junit.jupiter:junit-jupiter-engine:5.6.2",
 		    "org.junit.jupiter:junit-jupiter-api:5.6.2",
 		    "org.junit.platform:junit-platform-console:1.5.2",
+		    "org.apache.httpcomponents:httpclient:4.5.7",
+		    "org.mockito:mockito-junit-jupiter:2.23.0",
+		    "org.mockito:mockito-core:2.23.0",
 	    ],
 	    repositories = [
-		    "https://maven.google.com",
 		    "https://repo1.maven.org/maven2",
 	    ],
 	    fetch_sources = True,

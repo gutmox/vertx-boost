@@ -4,3 +4,6 @@ test --host_force_python=PY2
 
 test --test_output=all
 test --test_summary=detailed
+
+build  --javacopt="-source 11 -target 11 -encoding UTF-8 -XepDisableAllChecks"
+test  --javacopt="-source 11 -target 11 -encoding UTF-8 -XepDisableAllChecks"
