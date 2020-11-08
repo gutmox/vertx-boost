@@ -8,6 +8,8 @@ def maven():
             "io.vertx:vertx-web-client:3.9.1",
             "io.vertx:vertx-core:3.9.1",
             "io.vertx:vertx-rx-java2:3.9.1",
+            "io.vertx:vertx-rx-java2:3.9.1",
+            "io.netty:netty-transport:4.1.49.Final"
         ],
         repositories = [
             "https://repo1.maven.org/maven2",
