@@ -14,9 +14,9 @@ bazel run :service
 bazel test :tests
 ```  
 
-## Running from IntelliJ
+## Running from an IDE
 
-![IntelliJ](https://github.com/gutmox/vertx-boost/blob/master/doc/intellij.png?raw=true)  
+Simply run `com.gutmox.Main`  
 
 ### Building docker container
 
