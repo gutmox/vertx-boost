@@ -24,8 +24,7 @@ public class SoapParser {
 	private Node getSoapBody(String xml) {
 		try {
 			SOAPMessage message = getSoapMessage(xml);
-			Node firstElement = getFirstElement(message);
-			return firstElement;
+			return getFirstElement(message);
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		}
