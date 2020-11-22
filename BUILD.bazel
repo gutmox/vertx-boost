@@ -18,6 +18,11 @@ java_library(
         "@maven//:io_vertx_vertx_web_client",
         "@maven//:io_reactivex_rxjava2_rxjava",
         "@maven//:io_netty_netty_transport",
+        "@maven//:javax_xml_soap_javax_xml_soap_api",
+        "@maven//:javax_xml_bind_jaxb_api",
+        "@maven//:com_sun_xml_messaging_saaj_saaj_impl",
+        "@maven//:javax_activation_activation",
+        "@maven//:org_glassfish_jaxb_jaxb_runtime",
     ],
 )
 

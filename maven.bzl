@@ -9,7 +9,12 @@ def maven():
             "io.vertx:vertx-core:3.9.1",
             "io.vertx:vertx-rx-java2:3.9.1",
             "io.vertx:vertx-rx-java2:3.9.1",
-            "io.netty:netty-transport:4.1.49.Final"
+            "io.netty:netty-transport:4.1.49.Final",
+            "javax.xml.soap:javax.xml.soap-api:1.4.0",
+            "javax.xml.bind:jaxb-api:2.3.1",
+            "com.sun.xml.messaging.saaj:saaj-impl:1.5.1",
+            "javax.activation:activation:1.1",
+            "org.glassfish.jaxb:jaxb-runtime:2.3.0"
         ],
         repositories = [
             "https://repo1.maven.org/maven2",

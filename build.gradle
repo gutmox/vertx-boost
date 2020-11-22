@@ -20,6 +20,11 @@ dependencies {
     compile "io.vertx:vertx-rx-java2:$vertxVersion"
     compile "io.vertx:vertx-web:$vertxVersion"
     compile "io.vertx:vertx-web-client:${vertxVersion}"
+    compile "javax.xml.soap:javax.xml.soap-api:1.4.0"
+    compile "javax.xml.bind:jaxb-api:2.3.1"
+    compile 'com.sun.xml.messaging.saaj:saaj-impl:1.5.1'
+    compile('javax.activation:activation:1.1')
+    compile('org.glassfish.jaxb:jaxb-runtime:2.3.0')
     testCompile "io.vertx:vertx-junit5:$vertxVersion"
     testCompile "io.vertx:vertx-unit:$vertxVersion"
     testCompile "org.assertj:assertj-core:$assertjVersion"
