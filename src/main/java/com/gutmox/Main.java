@@ -19,7 +19,7 @@ public class Main {
 		DeploymentOptions deploymentOptions = new DeploymentOptions();
 		deploymentOptions.setInstances(1);
 		start(deploymentOptions)
-			.subscribe(res -> LOGGER.info("Verticle running with id " + res.toString().toLowerCase()),
+			.subscribe(res -> LOGGER.info("Verticle running with id " + res.toLowerCase()),
 				error -> {
 					error.printStackTrace();
 					LOGGER.error("Error starting !!!!!!!! " + error.getMessage());
